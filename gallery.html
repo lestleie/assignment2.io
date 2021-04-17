@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="F45, F45 Singapore, Assignment, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  body{
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+
+
+  /*Sticky for navigation bar*/
+    div.sticky {
+      position: sticky;
+      top: 0;
+    }
+
+  /*Navigation bar*/
+    ul {
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0,0.7);
+      margin-top: -2px;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 30px 30px;
+      text-decoration: none;
+      font-size: 150%;
+      font-family: Lucida Bright;
+    }
+
+    li a:hover {
+      background-color: #808080;
+    }
+
+    * {
+    box-sizing: border-box;
+  }
+
+
+
+  /*VA logo in nav bar*/
+  .resize {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  /*CSS for the headers*/
+  .header {
+    font-family: verdana, Helvetica, sans-serif ;
+      text-align: center;
+    font-size: 40px;
+    color: #d00000;
+    margin-bottom: 50px;
+  }
+
+  /*CSS for the subheaders*/
+  .subheader {
+    font-family: Lucida Bright;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  /*CSS for the paragraphs*/
+  p {
+    font-size: 30px;
+    font-family: Lucida Bright;
+    margin-top: 2%;
+    color: black;
+  }
+
+  /*photos*/
+  body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("one.jpg"); }
+.img2 { background-image: url("two.jpg"); }
+.img3 { background-image: url("four.jpg"); }
+.img4 { background-image: url("three.jpg"); }
+.img5 { background-image: url("seven.jpg"); }
+.img6 { background-image: url("ten.jpg"); }
+.img7 { background-image: url("eleven.jpg"); }
+
+
+}
+
+  /*Footer CSS*/
+  footer {
+    text-align: center;
+    padding: 0px;
+    background: #f0f0f0;
+    width: 100%;
+    height: 460px;
+  }
+
+  /*Footer social media buttons*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    position: relative;
+    left: 40%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+
+  </style>
+<body>
+
+  <!--Navigation bar with sticky-->
+  <div class="sticky" style="z-index:2;">
+    <ul>
+      <li><center><img src="logo.png" alt="Virgin Active" class="resize" width="100%"></center></li>
+        <li><a  href="index.html"><b>Clubs</b></a></li>
+        <li><a href="classes.html"><b>Classes</b></a></li>
+      <li><a href="contactus.html"><b>Contact Us</b></a></li>
+      <li><a class="active" href="getstarted.html"><b>Get Started</b></a></li>
+        <li><a href="gallery.html"><b>Gallery</b></a></li>
+    </ul>
+  </div>
+
+  <!--phtos-->
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+  <div class="bg-image img7"></div>
+
+  <!--Footer stuff-->
+  <footer>
+      <header class="header" style="padding-top:4%;"><b>Get Social With Us</b></header>
+      <p style="text-align: center;">Email: <u>virgin@active.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.virginactive.com.sg/home/our_difference/our_difference.aspx" target="_blank">About Us</a> | <a href="https://www.virginactive.com.sg/home/faqs.aspx" target="_blank">FAQ</a> | <a href="https://www.virginactive.com.sg/home/pages/member_benefits.aspx" target="_blank">BENEFITS</a> |  <a href="https://www.virginactive.com.sg/home/careers.aspx" target="_blank">CAREERS</a>
+      </p>
+      <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;"></div>
+      <br>
+
+
+  <!--Footer social media buttons-->
+    <a href="https://www.facebook.com/VirginActiveSingapore/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/virginactive?lang=en" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.youtube.com/channel/UC7gsKfig7b8oUxqoYYMizzQ/videos" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/virginactivesg/?hl=en" target="_blank" class="fa fa-instagram"></a>
+  </footer>
+</body>
+</html>

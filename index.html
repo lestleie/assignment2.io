@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="Virgin Active, Assignment, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  body{
+    margin: 0;
+    background-color: white;
+  }
+
+/*Sticky for navigation bar*/
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+/*Navigation bar*/
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0,0.7);
+    margin-top: -2px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: Lucida Bright;
+  }
+
+  li a:hover {
+    background-color: #808080;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/*Background video*/
+#myVideo {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  }
+
+.content {
+  position: fixed;
+  bottom: 0;
+  max-height: 20%;
+  background: black;
+  overflow: hidden;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+  z-index: -2;
+}
+
+
+
+/*VA logo in nav bar*/
+.resize {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+/*Flex containers*/
+.flex-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flex-container > div {
+width:100%;
+text-align: center;
+background: rgba(255, 255, 255, 0.8);
+font-size: 20px;
+color: white;
+}
+
+/*Smaller containers*/
+.block {
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+.container {
+  text-align: left;
+}
+
+.block img {
+ width: 400px;
+ height: 200px;
+ float: left;
+}
+
+/*CSS for the headers*/
+.header {
+  font-family: verdana, Helvetica, sans-serif ;
+
+  font-size: 50px;
+  color: #d00000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the subheaders*/
+.subheader {
+  font-family: Lucida Bright;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the paragraphs*/
+p {
+  font-size: 30px;
+  font-family: Lucida Bright;
+  margin-top: 2%;
+  color: black;
+}
+
+
+
+/*Footer CSS*/
+footer {
+  text-align: center;
+  padding: 0px;
+  background: #f0f0f0;
+  width: 100%;
+  height: 460px;
+}
+
+/*Footer social media buttons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!--Navigation bar with sticky-->
+  <div class="sticky" style="z-index:2;">
+    <ul>
+      <li><center><img src="logo.png" alt="Virgin Active" class="resize" width="100%"></center></li>
+        <li><a class="active" href="index.html"><b>Clubs</b></a></li>
+        <li><a href="classes.html"><b>Classes</b></a></li>
+      <li><a href="contactus.html"><b>Contact Us</b></a></li>
+      <li><a href="getstarted.html"><b>Get Started</b></a></li>
+      <li><a href="gallery.html"><b>Gallery</b></a></li>
+    </ul>
+    </ul>
+  </div>
+
+<!--Background video-->
+<div class="myVideo" style="z-index:1;">
+  <video autoplay muted loop id="myVideo">
+    <source src="video.mp4" width=100%; type="video/mp4">
+      Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<br>
+<br>
+<br>
+<header class="header" style=" text-align: left;"><b>Clubs</b>
+</header>
+<div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 100%; height: 0.5vh;"></div>
+
+
+<!--First flex container-->
+<div class="flex-container">
+  <div>
+    <div>
+    <img src="pool.png" width="50%" height="20%" alt="Virgin Active" style="float:left;">
+      <header class="subheader" style="padding-top:4%; display: inline-block;"><b>Raffles Place</b>
+      </header>
+    </div>
+    <div>
+      <p> Level 6, Tower 2, One Raffles Place
+        <br>
+        Singapore 048616
+        <br>
+
+      <i class="fa fa-phone" style="font-size:30px;color:red"></i>69087878
+    </div>
+      </p>
+    </div>
+    <br>
+<div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 100%; height: 0.3vh;"></div>
+<br>
+<!--Second flex container-->
+<div class="flex-container">
+  <div>
+    <div>
+    <img src="boxingbag.png" width="50%" height="20%" alt="Virgin Active" style="float:right;">
+    <header class="subheader" style="padding-top:4%;"><b>Tanjong Pagar</b></header>
+    </div>
+    <div>
+      <p>#06-01, Guoco Tower, 1 Wallich Street
+        <br>
+        Singapore 078881
+        <br>
+          <i class="fa fa-phone" style="font-size:30px;color:red"></i>69088902
+    </div>
+      </p>
+    </div>
+    <br>
+    <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 100%; height: 0.3vh;"></div>
+    <br>
+
+    <!--Third flex container-->
+    <div class="flex-container">
+      <div>
+        <div>
+        <img src="cycle.png" width="50%" height="20%" alt="Virgin Active" style="float:left;">
+          <header class="subheader" style="padding-top:4%; display: inline-block;"><b>Holland Village</b>
+          </header>
+        </div>
+        <div>
+          <p>#03-05, Raffles Holland V
+            <br>
+            118 Holland Avenue
+            <br>
+            Singapore 278973
+            <br>
+
+          <i class="fa fa-phone" style="font-size:30px;color:red"></i>69110300
+        </div>
+          </p>
+        </div>
+        <br>
+<div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 100%; height: 0.3vh;"></div>
+  <br>
+
+    <!--Forth flex container-->
+    <div class="flex-container">
+      <div>
+        <div>
+        <img src="weights.png" width="50%" height="20%" alt="Virgin Active" style="float:right;">
+        <header class="subheader" style="padding-top:4%;"><b>Marina One</b></header>
+        </div>
+        <div>
+          <p>Level 2, The Heart at Marina One
+            <br>
+            7 straits View
+            <br>
+            Singapore 018936
+            <br>
+              <i class="fa fa-phone" style="font-size:30px;color:red"></i>69110320
+        </div>
+          </p>
+        </div>
+
+<div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 100%; height: 0.5vh;"></div>
+
+<br>
+<br>
+<br>
+
+        <!--Smaller container blocks-->
+        <header class="header" style=" text-align: center;"><b>Find Us</b>
+          <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;"></div>
+          </header>
+
+        <iframe width="100%" height="570" src="https://www.google.com/maps/d/u/0/embed?mid=1LTqRLMmqWpqYnaEUNwnXM57QZcq5Q5nb">
+      </iframe>
+
+
+
+
+<div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 100%; height: 0.3vh;"></div>
+
+<!--Footer stuff-->
+<footer>
+    <header class="header" style="padding-top:4%;"><b>Get Social With Us</b></header>
+
+    <p style="text-align: center;">Email: <u>virgin@active.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.virginactive.com.sg/home/our_difference/our_difference.aspx" target="_blank">About Us</a> | <a href="https://www.virginactive.com.sg/home/faqs.aspx" target="_blank">FAQ</a> | <a href="https://www.virginactive.com.sg/home/pages/member_benefits.aspx" target="_blank">BENEFITS</a> |  <a href="https://www.virginactive.com.sg/home/careers.aspx" target="_blank">CAREERS</a>
+    </p>
+
+    <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;"></div>
+    <br>
+
+
+<!--Footer social media buttons-->
+  <a href="https://www.facebook.com/VirginActiveSingapore/" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/virginactive?lang=en" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.youtube.com/channel/UC7gsKfig7b8oUxqoYYMizzQ/videos" target="_blank" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/virginactivesg/?hl=en" target="_blank" class="fa fa-instagram"></a>
+</footer>
+
+
+</body>
+</html>

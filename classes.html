@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="Virgin Active, Assignment, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  body{
+    margin: 0;
+    background-color: white;
+  }
+
+/*Sticky for navigation bar*/
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+/*Navigation bar*/
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0,0.7);
+    margin-bottom: -80px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: Lucida Bright;
+  }
+
+  li a:hover {
+    background-color: #808080;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/*VA logo in nav bar*/
+.resize {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+/*Flex containers*/
+.flex-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flex-container > div {
+width:100%;
+text-align: center;
+background: rgba(255, 255, 255, 0.8);
+font-size: 20px;
+color: white;
+}
+
+/*CSS for the words*/
+.header {
+    font-family: verdana, Helvetica, sans-serif ;
+    position: relative;
+    left: -450px;
+  font-size:30px;
+  color: #d00000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the headers*/
+.header1 {
+  font-family: verdana, Helvetica, sans-serif ;
+
+  font-size: 40px;
+  color: #d00000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the headers*/
+.header2 {
+  font-family: verdana, Helvetica, sans-serif ;
+  position: relative;
+  left: -250px;
+  font-size: 40px;
+  color: #d00000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the subheaders*/
+.subheader {
+  font-family: verdana, Helvetica, sans-serif ;
+  position: relative;
+  left: -140px;
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 25px;
+  font-family: Lucida Bright;
+  text-align: left;
+  position: relative;
+  left: 235px;
+  margin-top: 2%;
+  color: black;
+}
+
+p1 {
+  font-size: 25px;
+  font-family: verdana, Helvetica, sans-serif ;
+  text-align: center;
+  margin-top: 2%;
+  color: black;
+}
+
+
+/*CSS for the paragraphs*/
+p2 {
+  font-size: 30px;
+  font-family: Lucida Bright;
+  margin-top: 2%;
+  color: black;
+}
+
+h1 {
+  font-family: verdana, Helvetica, sans-serif ;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*Footer CSS*/
+footer {
+  text-align: center;
+  padding: 0px;
+  background: #f0f0f0;
+  width: 100%;
+  height: 460px;
+}
+
+/*Footer social media buttons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/*Meet the team CSS*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+  height: 300px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #d00000;
+}
+
+/*Buttons CSS*/
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: #D6001C;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/*Table CSS*/
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  color: black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #F0F0F0;
+  text-align: left;
+  padding: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: #F0F0F0;
+}
+
+  </style>
+</head>
+
+<body>
+
+
+  <!--Navigation bar with sticky-->
+  <div class="sticky" style="z-index:2;">
+    <ul>
+      <li><center><img src="logo.png" alt="Virgin Active" class="resize" width="100%"></center></li>
+        <li><a href="index.html"><b>Clubs</b></a></li>
+        <li><a class="active" href="classes.html"><b>Classes</b></a></li>
+      <li><a href="contactus.html"><b>Contact Us</b></a></li>
+      <li><a href="getstarted.html"><b>Get Started</b></a></li>
+        <li><a href="gallery.html"><b>Gallery</b></a></li>
+    </ul>
+  </div>
+
+<!--Header Image-->
+<img src="deadlift.jpg" alt="deadlift" width="100%" height="60%" margin="0" position="absolute">
+
+<br>
+<br>
+<!--First flex container-->
+<div class="flex-container">
+  <div>
+      <header class="header" style="padding-top: 1%;"><b>CLASSES</b></header>
+
+<div>
+<header class="subheader" style="padding-top: 1%;"><b>Group exercise experiences</b></header>
+          <p> Whether you prefer high energy combat classes, calming yoga classes or targeted toning
+            <br>
+            classese, w’ve got a great selection of group exercises just for you.
+            <br>
+            <br>
+            When you join  Virgin Active, you’ll get  access to our  range of group  exercise classes
+            <br>
+             taught by great people in vibrant, state-of-the-art spaces.
+<br>
+<br>
+Come and experience it for yourself. Book your complimentary tour by contacting us now.
+            <br>
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+<!--Meet the team 1st division-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="aqua.jpg" alt="aqua" width="100%" height="300">
+      <div class="container">
+        <h1>Aqua</h1>
+        <p1 class="title">45mins</p1>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="boxingclass.jpg" alt="boxingclass" width="100%" height="300">
+      <div class="container">
+        <h1>Boxing</h1>
+        <p1 class="title">45mins</p1>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="spin.png" alt="spin" width="100%" height="300">
+      <div class="container">
+        <h1>Cycle</h1>
+        <p1 class="title">45mins</p1>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Meet the team 2nd division-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="workout.jpg" alt="workout" width="100%" height="300">
+      <div class="container">
+        <h1>Gym Workout</h1>
+        <p1 class="title">60mins</p1>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="pilates.jpg" alt="pilates" width="100%" height="300">
+      <div class="container">
+        <h1>Pilates</h1>
+        <p1 class="title">45mins</p1>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="yoga.jpg" alt="yoga" width="100%" height="300">
+      <div class="container">
+        <h1>Yoga</h1>
+        <p1 class="title">45mins</p1>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+<!--Second Header-->
+
+
+  <header class="header2" style="padding-top:4%;"><b>Schedule (daily timings)</b></header>
+  <br>
+
+  </div>
+      <br>
+      <br>
+
+<!--Daily Schedule Timings-->
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Class Type</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>08:45 AM – 09:30 AM </td>
+    <td>Boxing</td>
+    <td>Nicole Lim</td>
+  </tr>
+  <tr>
+    <td>09:30 AM – 10:30 AM </td>
+    <td>Gym Workout</td>
+    <td>Nicholas Tan</td>
+  </tr>
+  <tr>
+    <td>10:30 AM – 11:15 AM </td>
+    <td>Yoga</td>
+    <td>Constance Lien</td>
+  </tr>
+  <tr>
+    <td>11:15 AM – 12:00 PM </td>
+    <td>Pilates</td>
+    <td>Smitha Yeo</td>
+  </tr>
+  <tr>
+    <td>02:00 PM – 02:45 PM </td>
+    <td>Aqua</td>
+    <td>Casper Tan</td>
+  </tr>
+  <tr>
+    <td>02:45 PM – 03:30 PM </td>
+    <td>Cycle</td>
+    <td>Leslie Chen</td>
+  </tr>
+</table>
+
+<!--Sign up button-->
+<div style="text-align: center">
+<a href="https://www.virginactive.com.sg/home/join_us.aspx" target="_blank" class="button">SIGN UP NOW!</a></div>
+<br>
+<br>
+
+<!--Footer stuff-->
+<footer>
+    ><header class="header1" style="padding-top:4%;"><b>Get Social With Us</b></header>
+    <p2 style="text-align: center;">Email: <u>virgin@active.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.virginactive.com.sg/home/our_difference/our_difference.aspx" target="_blank">About Us</a> | <a href="https://www.virginactive.com.sg/home/faqs.aspx" target="_blank">FAQ</a> | <a href="https://www.virginactive.com.sg/home/pages/member_benefits.aspx" target="_blank">BENEFITS</a> |  <a href="https://www.virginactive.com.sg/home/careers.aspx" target="_blank">CAREERS</a>
+    </p2>
+    <br>
+      <br>
+        <br>
+
+<div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;"></div>
+    <br>
+
+
+
+<!--Footer social media buttons-->
+  <a href="https://www.facebook.com/VirginActiveSingapore/" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/virginactive?lang=en" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.youtube.com/channel/UC7gsKfig7b8oUxqoYYMizzQ/videos" target="_blank" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/virginactivesg/?hl=en" target="_blank" class="fa fa-instagram"></a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="F45, F45 Singapore, Assignment, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  body{
+    margin: 0;
+    background-color: white;
+  }
+
+
+
+  /*Sticky for navigation bar*/
+    div.sticky {
+      position: sticky;
+      top: 0;
+    }
+
+  /*Navigation bar*/
+    ul {
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0,0.7);
+      margin-top: -2px;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 30px 30px;
+      text-decoration: none;
+      font-size: 150%;
+      font-family: Lucida Bright;
+    }
+
+    li a:hover {
+      background-color: #808080;
+    }
+
+    * {
+    box-sizing: border-box;
+  }
+
+
+
+  /*VA logo in nav bar*/
+  .resize {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+
+
+  /*CSS for the headers*/
+  .header {
+    font-family: verdana, Helvetica, sans-serif ;
+
+    font-size: 40px;
+    color: #d00000;
+    margin-bottom: 50px;
+  }
+
+  /*CSS for the subheaders*/
+  .subheader {
+    font-family: Lucida Bright;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  /*CSS for the paragraphs*/
+  p {
+    font-size: 30px;
+    font-family: Lucida Bright;
+    margin-top: 2%;
+    color: black;
+  }
+
+
+
+  /*Footer CSS*/
+  footer {
+    text-align: center;
+    padding: 0px;
+    background: #f0f0f0;
+    width: 100%;
+    height: 460px;
+  }
+
+  /*Footer social media buttons*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+
+
+  /* form*/
+
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #d00000;
+    color: white;
+    padding: 14px 60px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .signupbutton {
+    position: relative;
+  left: 675px;
+  top: -175px
+
+  }
+
+  button:hover {
+    opacity:1;
+    background-color: #a20404
+  }
+
+  /* Extra styles for the signup button */
+  .signupbtn {
+    padding: 14px 20px;
+    background-color: #04724d;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #d00000;
+  }
+
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <!--Navigation bar with sticky-->
+    <div class="sticky" style="z-index:2;">
+      <ul>
+        <li><center><img src="logo.png" alt="Virgin Active" class="resize" width="100%"></center></li>
+          <li><a  href="index.html"><b>Clubs</b></a></li>
+          <li><a href="classes.html"><b>Classes</b></a></li>
+        <li><a href="contactus.html"><b>Contact Us</b></a></li>
+        <li><a class="active" href="getstarted.html"><b>Get Started</b></a></li>
+          <li><a href="gallery.html"><b>Gallery</b></a></li>
+      </ul>
+    </div>
+
+
+
+      <img src="last.jpg" alt="gym" style="width:100%">
+
+
+
+
+
+
+
+
+<div class="signupbutton">
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+</div>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php" >
+
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="contact"><b>Contact</b></label>
+        <input type="text" placeholder="Enter Contact" name="contact" required>
+
+        <label for="club"><b>Club</b></label>
+
+      <br>
+      <br>
+
+
+  <input type="checkbox" id="RafflesPlace" name="RafflesPlace" value="RafflesPlace">
+  <label for="vehicle1"> Raffles Place</label><br>
+  <input type="checkbox" id="TanjongPagar" name="TanjongPagar" value="TanjongPagar">
+  <label for="vehicle2"> Tanjong Pagar</label><br>
+  <input type="checkbox" id="HollandVillage" name="HollandVillage" value="HollandVillage">
+  <label for="vehicle3"> Holland Village</label><br>
+  <input type="checkbox" id="MarinaOne" name="MarinaOne" value="MarinaOne">
+  <label for="vehicle3"> Marina One</label><br>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember my password
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+
+
+  <!--Footer stuff-->
+  <footer>
+      <header class="header" style="padding-top:4%;"><b>Get Social With Us</b></header>
+      <p style="text-align: center;">Email: <u>virgin@active.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.virginactive.com.sg/home/our_difference/our_difference.aspx" target="_blank">About Us</a> | <a href="https://www.virginactive.com.sg/home/faqs.aspx" target="_blank">FAQ</a> | <a href="https://www.virginactive.com.sg/home/pages/member_benefits.aspx" target="_blank">BENEFITS</a> |  <a href="https://www.virginactive.com.sg/home/careers.aspx" target="_blank">CAREERS</a>
+      </p>
+      <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;"></div>
+      <br>
+
+
+  <!--Footer social media buttons-->
+    <a href="https://www.facebook.com/VirginActiveSingapore/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/virginactive?lang=en" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.youtube.com/channel/UC7gsKfig7b8oUxqoYYMizzQ/videos" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/virginactivesg/?hl=en" target="_blank" class="fa fa-instagram"></a>
+  </footer>
+
+
+
+</body>
+</html>

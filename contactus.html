@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="Virgin Active, Assignment, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+
+  body{
+    margin: 0;
+    background-color: white;
+
+    background-image: url('push.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: 100% 100%;
+    backdrop-filter: blur(17px);
+
+
+  }
+
+
+/*Sticky for navigation bar*/
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+/*Navigation bar*/
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0,0.7);
+    margin-top: -2px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: Lucida Bright;
+  }
+
+  li a:hover {
+    background-color: #808080;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+
+
+
+/*VA logo in nav bar*/
+.resize {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+
+
+/*CSS for the words*/
+.header {
+    font-family: verdana, Helvetica, sans-serif ;
+
+  font-size:40px;
+  color: #d00000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the subheaders*/
+.subheader {
+  font-family: Lucida Bright;
+  position: relative;
+  left: 200px;
+  font-size: 50px;
+  color: #d00000;
+  margin-bottom: 50px;
+}
+
+/*CSS for the words*/
+.header1 {
+    font-family: verdana, Helvetica, sans-serif ;
+    position: relative;
+    left: 200px;
+  font-size:20px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+
+/*CSS for the paragraphs*/
+p {
+  font-size: 20px;
+  font-family: Lucida Bright;
+  position: relative;
+  left: 200px;
+  margin-top: 2%;
+  color: #000000;
+}
+
+/*CSS for the paragraphs*/
+p1 {
+  font-size: 30px;
+  font-family: Lucida Bright;
+  margin-top: 2%;
+  color: black;
+}
+
+/*button*/
+.button {
+  border: none;
+  color: white;
+  padding: 20px 62px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  left: 200px;
+  font-size: 16px;
+  margin: 4px 4px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.button1:focus {
+  background-color: #d00000;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.button2:focus {
+  background-color: #d00000;
+  color: white;
+}
+
+
+
+/*form*/
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #8a817c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #d00000;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Footer CSS*/
+footer {
+  text-align: center;
+  padding: 0px;
+  background: #f0f0f0;
+  width: 100%;
+  height: 460px;
+}
+
+/*Footer social media buttons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!--Navigation bar with sticky-->
+  <div class="sticky" style="z-index:2;">
+    <ul>
+      <li><center><img src="logo.png" alt="Virgin Active" class="resize" width="100%"></center></li>
+        <li><a class="active" href="index.html"><b>Clubs</b></a></li>
+        <li><a href="classes.html"><b>Classes</b></a></li>
+      <li><a href="contactus.html"><b>Contact Us</b></a></li>
+      <li><a href="getstarted.html"><b>Get Started</b></a></li>
+        <li><a href="gallery.html"><b>Gallery</b></a></li>
+    </ul>
+  </div>
+
+
+<header class="subheader" style="padding-top:4%;"><b>Send a message </b></header>
+<p><b> Just pop your details below and let us know your questions and we'll get back to you as soon as we can.
+</b>
+</p>
+
+<!-- buttons -->
+
+<button class="button button1"><b>I'm a member</b></button>
+<button class="button button2"><b>I'm not a member</b></button>
+<br>
+<br>
+<br>
+
+<header class="header1" style="padding-top:4%;">
+<i class='fas fa-pen' style='font-size:30px;color: #d00000' ></i><b> Please enter your details
+</b>
+</header>
+
+
+
+
+<!-- forms -->
+
+<div class="container">
+  <form action="/action_page.php">
+
+
+
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Name</label>
+    </div>
+  <div class="col-75">
+      <input type="text" id="name" name="name" placeholder="Your name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Your email address..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="contact">Contact number </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="contact" name="contact" placeholder="Your contact number..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="club">Club</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="Rafflesplace">Raffles place</option>
+        <option value="TanjongPagar">Tanjong Pagar</option>
+        <option value="HollandVillage">Holland Village</option>
+        <option value="MarinaOne">Marina One</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Message</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
+
+<!--Footer stuff-->
+
+  <footer>
+      <header class="header" style="padding-top:4%;"><b>Get Social With Us</b></header>
+      <p1 style="text-align: center;">Email: <u>virgin@active.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.virginactive.com.sg/home/our_difference/our_difference.aspx" target="_blank">About Us</a> | <a href="https://www.virginactive.com.sg/home/faqs.aspx" target="_blank">FAQ</a> | <a href="https://www.virginactive.com.sg/home/pages/member_benefits.aspx" target="_blank">BENEFITS</a> |  <a href="https://www.virginactive.com.sg/home/careers.aspx" target="_blank">CAREERS</a>
+      </p1>
+      <br>
+      <br>
+      <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;">
+      </div>
+      <br>
+  <!--Footer social media buttons-->
+    <a href="https://www.facebook.com/VirginActiveSingapore/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/virginactive?lang=en" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.youtube.com/channel/UC7gsKfig7b8oUxqoYYMizzQ/videos" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/virginactivesg/?hl=en" target="_blank" class="fa fa-instagram"></a>
+  </footer>
+</div>
+</body>
+</html>
